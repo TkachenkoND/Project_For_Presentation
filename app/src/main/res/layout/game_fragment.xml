@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_background">
+
+    <View
+        android:id="@+id/vorota"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnPause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="360dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pause" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/player"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/player" />
+
+
+        <ImageView
+            android:id="@+id/ball"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/ball" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ball" />
+
+        <TextView
+            android:id="@+id/countBall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pauseView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#C1FFFFFF"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnSound"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="360dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sound"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            app:cardCornerRadius="360dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/play"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnBack"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="360dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/goalsTxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#85FFFFFF"
+        android:gravity="center"
+        android:text="You scored goals 1"
+        android:textColor="@color/black"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</FrameLayout>

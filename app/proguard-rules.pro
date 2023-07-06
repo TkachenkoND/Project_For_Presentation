@@ -1,0 +1,4 @@
+-optimizationpasses 5
+-obfuscationdictionary "/Obfuscation/data1.txt"
+-classobfuscationdictionary "/Obfuscation/data2.txt"
+-packageobfuscationdictionary "/Obfuscation/data3.txt"
